@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Boutique';
+
+  someValue: string ="";
+  someValues:Array<string> = new Array<string>();
+  Callsomelogic(){
+    this.someValues.push(this.someValue);
+    this.someValue="";
+
+  }
+
+
+
 }
